@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@thisisarda's Profile</title>
+  <link rel="icon" type="image/png" href="icon.jpeg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #202124; /* Koyu gri arka plan */
+      color: #FFF; /* Beyaz metin rengi */
+    }
+
+    header {
+      background: linear-gradient(to right, #6A0DAD, #9B30FF); /* Mor gradyan arka plan */
+      padding: 20px;
+      color: #FFF; /* Beyaz metin rengi */
+      text-align: center; /* Başlığı ortala */
+      animation: slide-in-header 1s ease-out; /* Animasyon ekle */
+      border-radius: 0 0 15px 15px; /* Alt köşeleri ovalleştir */
+    }
+
+    section {
+      padding: 20px;
+      text-align: center; /* Metinleri ortala */
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0px; /* Sayfanın altından -50px aşağıda başlasın */
+      width: 100%;
+      text-align: center;
+      color: #FFF; /* Beyaz metin rengi */
+      animation: slide-in-footer 1s ease-out forwards; /* Animasyon ekle */
+      transition: transform 0.2s ease-in-out; /* Titreşim için geçiş efekti ekle */
+    }
+
+    footer:hover {
+      transform: translateX(-3px) translateY(-3px); /* Hafifçe titremesi için efekt */
+    }
+
+    iframe {
+      margin: 20px auto; /* Widget'i ortala */
+      display: block;
+      border-radius: 10px; /* Köşeleri ovalleştir */
+    }
+
+    /* Kaydırma çubuğu */
+    ::-webkit-scrollbar {
+      width: 10px; /* Çubuk genişliği */
+    }
+
+    /* Kaydırma çubuğu parçası */
+    ::-webkit-scrollbar-thumb {
+      background-color: #888; /* Çubuk rengi */
+      border-radius: 5px; /* Kenar yarıçapı */
+    }
+
+    /* Kaydırma çubuğu yuvası */
+    ::-webkit-scrollbar-track {
+      background-color: #333; /* Arka plan rengi */
+    }
+
+    @keyframes slide-in-header {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slide-in-footer {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    .footer-content {
+      background-color: #6A0DAD; /* Mor arka plan */
+      padding: 10px; /* İçeriği biraz içeriye al */
+      border-radius: 10px; /* Köşeleri ovalleştir */
+      display: inline-block; /* İçeriği sarmala */
+    }
+
+    /* Buton üstüne geldiğinde titreşim efekti */
+    .footer-content:hover {
+      animation: shake 0.3s;
+    }
+
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-3px) translateY(-3px); }
+      50% { transform: translateX(3px) translateY(3px); }
+      75% { transform: translateX(-3px) translateY(-3px); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome</h1>
+  </header>
+
+  <section>
+    <h1>👋 Hi, I’m Arda - @thisisarda,@ardzFPS - </h1>
+    <p>A high school student in <a href="https://gelisimkoleji.k12.tr">Eskişehir Gelişim Schools</a></p>
+
+    <h2>❔ About me</h2>
+    <p>🏷 I'm Arda.</p>
+    <p>🏳 I live in Eskişehir,Türkiye.</p>
+    <p>👀 I’m interested in coding and playing games (Valorant, Minecraft,Fortnite, JS, TS).</p>
+    <p>🖥 Favorite programming language <a href="https://tr.wikipedia.org/wiki/JavaScript">JavaScript.</a></p>
+  
+    <h2>✍ Technologies that I use</h2>
+    <img src="https://skillicons.dev/icons?i=bots,js,ts,nodejs,mongodb,github,html,css,vscode,atom,instagram,discord&theme=dark" alt="Tech Icons">
+  
+    <h2>📈 My stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=ardzFPS&show_icons=true&theme=dark" alt="GitHub Stats">
+  
+    <h2>💎 My achievements</h2>
+    <img src="https://github-profile-trophy.vercel.app/?username=ardzFPS&theme=onedark" alt="GitHub Trophies">
+  
+   
+    <iframe
+    id="widgetFrame"
+    title="@thisisarda"
+    width="400"
+    height="300"
+    frameborder="0"
+    sandbox="allow-scripts"
+    src="https://widgets.vendicated.dev/user?id=711886425557041172&theme=dark&banner=true&full-banner=true&rounded-corners=true&discord-icon=true&badges=true&guess-nitro=true&"
+  ></iframe>
+  
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>Telif Hakkı &copy; 2024 - @thisisarda</p>
+    </div>
+  </footer>
+
+  <script>
+    function openURL() {
+      window.open("https://discord.com/users/711886425557041172", "_blank");
+    }
+  </script>
+</body>
+</html>
